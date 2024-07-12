@@ -10,7 +10,8 @@
 			"mhutchie.git-graph",
 			"ibm.output-colorizer",
 			"ms-python.python",
-			"ms-toolsai.tensorboard"
+			"ms-toolsai.tensorboard",
+			"ms-toolsai.jupyter"
 		]
 	  }
 	},
@@ -21,7 +22,10 @@
 		}
 	},
 
-	"postStartCommand": "bash ./.devcontainer/postStartCommand.sh",
+	// uncomment below if you want to use your browser instead of vscode
+	// "postStartCommand": "bash ./.devcontainer/postStartCommand.sh",
+	// "postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh --browser",
+
 	"postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
 
 	"forwardPorts": [8888]
