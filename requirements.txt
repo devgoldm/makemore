@@ -1,0 +1,11 @@
+--extra-index-url https://download.pytorch.org/whl/cpu # for cpu usage
+# --extra-index-url https://download.pytorch.org/whl/cu116 # for cuda capable gpus
+torch
+torchvision
+torchaudio
+pandas
+matplotlib
+jax
+numpyro
+statsmodels
+tensorboard
