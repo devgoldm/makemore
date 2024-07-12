@@ -1,0 +1,28 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/anaconda:3",
+  
+	"customizations": {
+	  "vscode": {
+		"extensions": [
+			"eamodio.gitlens",
+			"mutantdino.resourcemonitor",
+			"ms-vsliveshare.vsliveshare",
+			"mhutchie.git-graph",
+			"ibm.output-colorizer",
+			"ms-python.python",
+			"ms-toolsai.tensorboard"
+		]
+	  }
+	},
+
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "latest"
+		}
+	},
+
+	"postStartCommand": "bash ./.devcontainer/postStartCommand.sh",
+	"postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
+
+	"forwardPorts": [8888]
+}
