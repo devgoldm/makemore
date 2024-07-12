@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# run this script if you want to use your browser instead of vscode
+
 nohup bash -c 'jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root &'
 
 while ! nc -z localhost 8888; do
